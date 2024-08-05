@@ -15,6 +15,11 @@ plugins {
     application
 }
 
+tasks.named<Jar>("jar") {
+    manifest {
+        attributes["Main-Class"] = "com.gradlehero.languageapp.sayhello"
+    }
+}
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
