@@ -7,6 +7,7 @@
  */
 
 plugins {
+    java
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.jvm)
 
